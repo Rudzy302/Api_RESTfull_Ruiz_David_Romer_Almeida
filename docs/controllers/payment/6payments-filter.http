@@ -1,0 +1,6 @@
+// docs/controllers/payments-filter.http
+###  1.Endpoint para obtener todos los pagos con filtros (estado, monto, fecha
+@authToken = TU_TOKEN_AQU
+GET http://localhost:3001/api/payments/filter?status=PENDING&amount=100&date=2024-01-01
+Content-Type: application/json
+Authorization: Bearer {{authToken}}

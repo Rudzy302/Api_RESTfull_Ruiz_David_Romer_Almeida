@@ -1,0 +1,11 @@
+// docs/controllers/payment-methods-get.http
+### Obtener todos los métodos
+@authToken = TOKEN_AQUI
+GET http://localhost:3001/api/payment-methods
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+### Obtener método por ID
+GET http://localhost:3001/api/payment-methods/1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}

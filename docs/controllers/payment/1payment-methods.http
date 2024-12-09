@@ -1,0 +1,11 @@
+// docs/controllers/payment/payment-methods.http
+@authToken = YOUR_TOKEN_HERE
+
+### 6. Crear método de pago
+POST http://localhost:3001/api/payment-methods
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+    "methodName": "Credit Card"
+}

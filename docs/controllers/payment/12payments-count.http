@@ -1,0 +1,11 @@
+// docs/controllers/payments-count.http
+### 9. Endpoint para obtener el número de pagos por estado
+@authToken = YOUR_TOKEN_HERE
+GET http://localhost:3001/api/payments/count/status
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+###  10. Endpoint para obtener los pagos con el total pagado por cada método de pago
+GET http://localhost:3001/api/payments/total/by-method
+Authorization: Bearer {{authToken}}
+Content-Type: application/json

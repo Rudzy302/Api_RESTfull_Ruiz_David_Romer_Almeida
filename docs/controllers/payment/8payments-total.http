@@ -1,0 +1,6 @@
+// docs/controllers/payments-total.http
+### 4. Endpoint para obtener el total pagado por un método de pago
+@authToken = YOUR_TOKEN_HERE
+GET http://localhost:3001/api/payments/total/method/1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json

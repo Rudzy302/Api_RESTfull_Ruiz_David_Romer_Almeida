@@ -1,0 +1,12 @@
+### docs/controllers/updateProfile.http
+PUT  http://localhost:3001/api/users/profile/1
+Authorization: Bearer TOKEN_DEBE_IR_AQUI
+Content-Type: application/json
+
+{
+    "firstName":"prueba1",
+    "middleName":"Prueba1",
+    "lastName":"prueba1",
+    "phone":"1234567890",
+    "password":"asdfgh"
+}

@@ -1,0 +1,11 @@
+// docs/controllers/payments-location.http
+### 8. Endpoint para obtener pagos por ubicación y método de pago
+@authToken = YOUR_TOKEN_HERE
+GET http://localhost:3001/api/payments/location/1/method/1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+### 3.Pagos pendientes por ubicación
+GET http://localhost:3001/api/payments/pending/location/1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json

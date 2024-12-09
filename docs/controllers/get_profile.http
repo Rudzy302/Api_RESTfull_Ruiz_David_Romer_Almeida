@@ -1,0 +1,5 @@
+# docs/controllers/getprofile.http
+@env = dev
+
+GET http://localhost:3001/api/users/profile
+Authorization: Bearer TOKEN_DEBE_IR_AQUI

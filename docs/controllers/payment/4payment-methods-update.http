@@ -1,0 +1,11 @@
+// docs/controllers/payment-methods-update.http
+@authToken = YOUR_TOKEN_HERE
+
+### Actualizar método
+PUT http://localhost:3001/api/payment-methods/1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+    "methodName": "Updated Method"
+}

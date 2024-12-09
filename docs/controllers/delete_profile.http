@@ -1,0 +1,5 @@
+# docs/controllers/deleteprofile.http
+@env = dev
+
+DELETE http://localhost:3001/api/users/profile/1
+Authorization: Bearer TOKEN_DEBE_IR_AQUI

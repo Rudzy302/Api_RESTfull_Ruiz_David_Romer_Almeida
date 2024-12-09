@@ -1,0 +1,12 @@
+### docs/controllers/register.http
+POST http://localhost:3001/api/users/register
+Content-Type: application/json
+
+{
+    "firstName": "pedro",
+    "middleName": "pepito",
+    "lastName": "perez",
+    "phone": "3109876543",
+    "email": "pedro@gmail.com",
+    "password": "pedro123"
+}

@@ -1,0 +1,7 @@
+// docs/controllers/payment-methods-location.http
+### 8. MEndpoint para obtener todos los métodos de pago disponibles para una ubicación
+@authToken = YOUR_TOKEN_HERE
+
+GET http://localhost:3001/api/payment-methods/location/1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json

@@ -1,0 +1,6 @@
+// docs/controllers/payments-invoice.http
+### 5. Endpoint para obtener pagos de una factura con su método de pago
+@authToken = YOUR_TOKEN_HERE
+GET http://localhost:3001/api/payments/invoice/1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json

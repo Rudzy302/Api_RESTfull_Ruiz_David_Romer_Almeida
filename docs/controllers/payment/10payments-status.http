@@ -1,0 +1,11 @@
+// docs/controllers/payments-status.http
+@authToken = YOUR_TOKEN_HERE
+
+### 7. Endpoint para actualizar el estado de un pago
+PUT http://localhost:3001/api/payments/1/status
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+    "status": "COMPLETED"
+}

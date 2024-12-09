@@ -1,0 +1,6 @@
+// docs/controllers/payment-methods-delete.http
+@authToken = YOUR_TOKEN_HERE
+
+### Eliminar método
+DELETE http://localhost:3001/api/payment-methods/1
+Authorization: Bearer {{authToken}}

@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:3001
+@authToken = TOKEN_DEBE_IR_AQUI
+
+# 5.1. Endpoint para actualizar múltiples roles de usuarios 
+PUT {{baseUrl}}/api/users/1/roles
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "roleIds": [1, 2, 3]
+}
+
+# 5.2. Endpoint para obtener la lista de roles de un usuario específico 
+GET {{baseUrl}}/api/users/1/roles
+Authorization: Bearer {{authToken}}
+
+# 5.3. Endpoint para calcular el total de roles asignados de un usuario específico
+GET {{baseUrl}}/api/users/1/roles/count
+Authorization: Bearer {{authToken}}
